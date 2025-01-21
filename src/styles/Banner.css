@@ -108,7 +108,7 @@
 .banner {
   position: relative;
   height: 60vh;
-  background: url('C:\Users\User\Desktop\aluraflix\src\assets\imagenes\alura_latam_cover.jpeg') no-repeat center center/cover;
+  background: url('../assets/imagenes/alura_latam_cover.jpeg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

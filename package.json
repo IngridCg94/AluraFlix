@@ -12,6 +12,9 @@
     "web-vitals": "^2.1.0",
     "json-server": "^0.17.0"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "start": "json-server --watch db.json --port 3000" 
   },

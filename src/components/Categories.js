@@ -3,15 +3,16 @@ import React, { useEffect, useState } from 'react';
 const Categories = () => {
   const [categories, setCategories] = useState([]);
   const [videos, setVideos] = useState([]);
+  const API_BASE_URL = "https://courageous-panoramic-challenge.glitch.me";
 
   useEffect(() => {
     // Cargar categorías
-    fetch("http://localhost:3001/categories")
+    fetch(`${API_BASE_URL}/categories`)
       .then((response) => response.json())
       .then((data) => setCategories(data));
 
     // Cargar videos
-    fetch("http://localhost:3001/videos")
+    fetch(`${API_BASE_URL}/videos`)
       .then((response) => response.json())
       .then((data) => setVideos(data));
   }, []);

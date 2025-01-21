@@ -9,10 +9,11 @@ function AddModal({ onAdd, onClose }) {
     description: "",
   });
   const [categories, setCategories] = useState([]);
+  const API_BASE_URL = "https://courageous-panoramic-challenge.glitch.me";
 
   useEffect(() => {
     // Cargar categorías desde el servidor
-    fetch("http://localhost:3001/categories")
+    fetch(`${API_BASE_URL}/categories`)
       .then((response) => response.json())
       .then((data) => setCategories(data))
       .catch((error) => console.error("Error al cargar las categorías:", error));

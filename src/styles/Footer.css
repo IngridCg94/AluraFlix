@@ -1,0 +1,16 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #6200ea;
+    color: white;
+  }
+  
+  .footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    height: 40px; /* Ajusta según lo que necesites */
+    width: auto;
+  }

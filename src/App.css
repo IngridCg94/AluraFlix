@@ -1,0 +1,239 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.categories {
+  padding: 20px 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6200ea;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.new-video-btn {
+  background-color: #03dac5;
+  border: none;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-video-btn:hover {
+  background-color: #01bfa1;
+}
+
+/* Category Section */
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  border-left: 5px solid #6200ea;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #6200ea;
+}
+
+/* Video List */
+.video-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.video-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.edit-btn {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.edit-btn:hover {
+  background-color: #4b00b5;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #6200ea;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content label {
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-content input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button[type="submit"] {
+  background-color: #03dac5;
+  color: #333;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #01bfa1;
+}
+
+.modal-content button[type="button"] {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.modal-content button[type="button"]:hover {
+  background-color: #c6c6c6;
+}
+
+.video-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.no-results {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .videos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-thumbnail {
+    max-width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
